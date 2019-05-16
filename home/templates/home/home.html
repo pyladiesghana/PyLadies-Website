@@ -1,0 +1,367 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Home
+{% endblock title %}
+
+{% block content %}
+     <!-- Slider -->
+    <header>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div
+            class="carousel-item active"
+            style="background-image: url({%  static 'home/img/slider-3.jpeg' %})"
+          >
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="display-4">First Slide</h2>
+              <p class="lead">This is a description for the first slide.</p>
+            </div>
+          </div>
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <div
+            class="carousel-item"
+            style="background-image: url({% static 'home/img/slider-1.jpeg' %})"
+          >
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="display-4">Second Slide</h2>
+              <p class="lead">This is a description for the second slide.</p>
+            </div>
+          </div>
+          <!-- Slide Three - Set the background image for this slide in the line below -->
+          <div
+            class="carousel-item"
+            style="background-image: url({% static 'home/img/slider-2.jpeg' %})"
+          >
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="display-4">Third Slide</h2>
+              <p class="lead">This is a description for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Story & Initiatives -->
+    <div class="container">
+      <div class="row pyladies">
+        <!-- <div class="col-sm-6">
+          <div class="card shadow text-center">
+            <div class="card-body">
+              <h5 class="card-title text-center text-uppercase">Our Story</h5>
+              <p class="card-text text-left">
+                With supporting text below as a natural lead-in to additional
+                content. With supporting text below as a natural lead-in to
+                additional content. With supporting text below as a natural
+                lead-in to additional content. With supporting text below as a
+                natural lead-in to additional content.
+              </p>
+              <a href="#" class="btn btn-primary ">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card shadow ">
+            <div class="card-body">
+              <h5 class="card-title text-center text-uppercase">
+                Our Initiatives
+              </h5>
+              <p class="card-text text-left">
+                With supporting text below as a natural lead-in to additional
+                content. With supporting text below as a natural lead-in to
+                additional content. With supporting text below as a natural
+                lead-in to additional content. With supporting text below as a
+                natural lead-in to additional content.
+              </p>
+              <a href="#" class="btn btn-primary ">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+        <div class="col-sm-6">
+          <div class="card mb-3 shadow" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img
+                  src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"
+                  class="card-img"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title text-primary text-uppercase">
+                    Our Story
+                  </h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text">
+                    <a href="#" class="btn btn-primary story"
+                      >Continue reading</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card mb-3 shadow" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img
+                  src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"
+                  class="card-img"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title text-success text-uppercase">
+                    Our Initiatives
+                  </h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text">
+                    <a href="#" class="btn btn-primary story"
+                      >Continue reading</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sponsors -->
+    <div class="container sponsors">
+      <h3
+        style="text-align:center; border-bottom:solid 1px #eee; margin-bottom: 2rem;"
+      >
+        Our Sponsors
+      </h3>
+      <div class="customer-logos slider">
+        <div class="slide">
+          <img
+            src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"
+            alt=""
+            class="slide-image"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"
+            alt=""
+            class="slide-image"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"
+            alt=""
+            class="slide-image"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"
+            alt=""
+            class="slide-image"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"
+            alt=""
+            class="slide-image"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"
+            alt=""
+            class="slide-image"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"
+            alt=""
+            class="slide-image"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"
+            alt=""
+            class="slide-image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Partners -->
+    <div class="container partners">
+      <h3
+        style="text-align:center; border-bottom:solid 1px #eee; margin-bottom: 2rem;"
+      >
+        Our Partners
+      </h3>
+      <div class="customer-logos slider">
+        <div class="slide">
+          <img
+            src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="margin-bottom:50px">
+      <div class="row">
+        <div class="col-sm-6">
+          <!-- Tweets -->
+          <div class="container tweets">
+            <h3>
+              Recent Tweets
+            </h3>
+            <div class="card example-1 scrollbar-ripe-malinka">
+              <div class="card-body">
+                <a
+                  class="twitter-timeline"
+                  href="https://twitter.com/pyladies/lists/pyladies-locations?ref_src=twsrc%5Etfw"
+                  >A Twitter List by pyladies</a
+                >
+                <script
+                  async
+                  src="https://platform.twitter.com/widgets.js"
+                  charset="utf-8"
+                ></script>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <!-- Tweets -->
+          <div class="container tweets">
+            <h3>
+              Upcoming Events
+            </h3>
+            <div
+              class="card example-1 square scrollbar-dusty-grass square thin"
+            >
+              <div class="card-body">
+                <h4 id="section1"><strong>Fourth title of the news</strong></h4>
+                <p>
+                  Ad leggings keytar, brunch id art party dolor labore.
+                  Pitchfork yr enim lo-fi before they sold out qui. Tumblr
+                  farm-to-table bicycle rights whatever. Anim keffiyeh carles
+                  cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon
+                  irure. Cosby sweater lomo jean shorts, williamsburg hoodie
+                  minim qui you probably haven't heard of them et cardigan trust
+                  fund culpa biodiesel wes anderson aesthetic. Nihil tattooed
+                  accusamus, cred irony biodiesel keffiyeh artisan ullamco
+                  consequat.
+                </p>
+
+                <p>
+                  Ad leggings keytar, brunch id art party dolor labore.
+                  Pitchfork yr enim lo-fi before they sold out qui. Tumblr
+                  farm-to-table bicycle rights whatever. Anim keffiyeh carles
+                  cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon
+                  irure. Cosby sweater lomo jean shorts, williamsburg hoodie
+                  minim qui you probably haven't heard of them et cardigan trust
+                  fund culpa biodiesel wes anderson aesthetic. Nihil tattooed
+                  accusamus, cred irony biodiesel keffiyeh artisan ullamco
+                  consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock content %}
