@@ -1,102 +1,14 @@
-{% load static %}
+ {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-    <title>PyLadies | {% block title %}{% endblock title %}</title>
-
-        <!-- Favicon-->
-    <link rel="icon" href="{% static 'img/pyladies.png' %}"
-          type="image/gif" sizes="16x16">
-
-    {% block stylesheets %}
-
-    <!-- Fonts -->
+     <!-- Fonts -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+ <!-- PyLadies styles -->
+ <link rel="stylesheet" href="{% static 'css/pyladies/index.css' %}" />
 
-    <!-- Stylesheets -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{% static 'css/bootstrap/bootstrap.min.css' %}"
-    />
-
-       <!-- Custom styles for this template -->
-    <link href="{% static 'css/pyladies/agency.min.css' %}" rel="stylesheet" />
-
-        <!-- PyLadies styles -->
-    <link rel="stylesheet" href="{% static 'css/pyladies/index.css' %}" />
-
-    {% endblock stylesheets %}
-
-  </head>
-  <body>
-
-    {% block navbar %}
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="{% url 'home:home' %}"><img
-                  class="img-responsive"
-                  src="{% static 'img/pyladies.png' %}"
-                  style="width:60px; height: 50px"
-                  alt=""
-                />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link about" href="#"
-                >About
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Resources</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'contact:contact' %}">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'forum:index' %}">Forum</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    {% endblock navbar %}
-
-
-    {% block content %}
-    {% endblock content %}
-
-
-    {% block footer %}
-    <!-- Footer -->
+ <!-- Footer -->
     <footer class="webintern-footer">
       <div class="webintern-footer-inner">
         <div class="container">
@@ -225,27 +137,3 @@
       </div>
     </footer>
     <!-- Footer -->
-    {% endblock footer %}
-
-    {% block scripts %}
-
-    <!-- Scripts -->
-
-    <!-- Jquery -->
-    <script src="{% static 'js/jquery/jquery-3.3.1.slim.min.js' %}"></script>
-    <script src="{% static 'js/jquery/jquery.min.js' %}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="{% static 'js/bootstrap/bootstrap.bundle.min.js' %}"></script>
-
-    <script src="{% static 'js/jquery/jquery.easing.min.js' %}"></script>
-
-    <!-- PyLadies -->
-    <script src="{% static 'js/pyladies/sponsors.js' %}"></script>
-
-    {% endblock scripts %}
-
-  </body>
-</html>

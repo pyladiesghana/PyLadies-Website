@@ -20,9 +20,13 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
 
+# Third-party app imports
+from machina import urls as machina_urls
+
 urlpatterns = [
     path('', include('home.urls', namespace='home')),
     path('contact/', include('contact.urls', namespace='contact')),
+    path('forum/', include(machina_urls)),
     path('admin/', admin.site.urls),
 ]
 
