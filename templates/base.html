@@ -3,13 +3,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="PyLadies Ghana is Mentor-ship group in
+                                      Ghana focused on helping more women become
+                                       active participants and leaders in the
+                                       Python open-source Community."
+    >
+	<meta name="keywords" content="Python, PyLadies, PyLadies Ghana, Ghana,
+	                                Programming, Django Girls, Mentor-ship"
+    >
 
+    <!-- Title -->
     <title>PyLadies | {% block title %}{% endblock title %}</title>
 
-        <!-- Favicon-->
+      <!-- Favicon-->
     <link rel="icon" href="{% static 'img/pyladies.png' %}"
           type="image/gif" sizes="16x16">
 
@@ -35,6 +45,15 @@
     <link rel="stylesheet" href="{% static 'css/pyladies/index.css' %}" />
 
     {% endblock stylesheets %}
+
+   <!-- Crisp Live Chat script -->
+     <script type="text/javascript">
+     window.$crisp=[];
+     window.CRISP_WEBSITE_ID="6b416409-1363-4dbd-9379-7b08cae6c91a";
+     (function(){ d=document;s=d.createElement("script");
+     s.src="https://client.crisp.chat/l.js"; s.async=1;
+     d.getElementsByTagName("head")[0].appendChild(s);})();
+     </script>
 
   </head>
   <body>
@@ -116,9 +135,10 @@
               </h4>
               <div class="simple-text dark padding-sm">
                 <p>
-                  Totam rem aperiam, eaque ipsa quae ab illo inv ent ore
-                  veritatis et quasi architecto beatae vitae dict eaque ipsa
-                  quae ab.
+                  PyLadies Ghana is Mentor-ship group in
+                    Ghana focused on helping more women become
+                    active participants and leaders in the
+                    Python open-source Community.
                 </p>
               </div>
               <div class="empty-space xs-25 sm-25"></div>
