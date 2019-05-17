@@ -1,0 +1,15 @@
+.errorlist {
+    color: #dc3545 !important;
+}
+
+.contact-detail {
+    margin: 15px 0px;
+    text-align: center;
+    color:white;
+}
+
+.contact-detail i {
+    font-size: 36px;
+    color: #6195FF;
+    margin-bottom: 20px;
+}
