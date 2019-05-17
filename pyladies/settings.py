@@ -13,9 +13,6 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 # Standard Python Library imports
 import os
 
-# Django imports
-from django.urls import reverse_lazy
-
 # Third-party app imports
 from machina import MACHINA_MAIN_TEMPLATE_DIR, MACHINA_MAIN_STATIC_DIR
 
@@ -173,6 +170,7 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = ''
 
+
 # MEDIA files (Uploaded Files, Uploaded Images)
 # https://docs.djangoproject.com/en/2.2/topics/files/
 
@@ -191,19 +189,3 @@ HAYSTACK_CONNECTIONS = {
 # Machina
 MACHINA_FORUM_NAME = 'PyLadies Forum'
 
-# AUTH CONFIGURATION
-# ------------------------------------------------------------------------------
-
-LOGIN_URL = reverse_lazy('login')
-
-MACHINA_DEFAULT_AUTHENTICATED_USER_FORUM_PERMISSIONS = [
-    'can_see_forum',
-    'can_read_forum',
-    'can_start_new_topics',
-    'can_reply_to_topics',
-    'can_edit_own_posts',
-    'can_post_without_approval',
-    'can_create_polls',
-    'can_vote_in_polls',
-    'can_download_file',
-]
