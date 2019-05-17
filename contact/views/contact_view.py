@@ -30,7 +30,8 @@ def contact(request):
 
                 # process the data in form.cleaned_data as required
                 try:
-                    send_mail(subject, message, sender_email, recipients)
+                    send_mail(subject, message, sender_email, recipients,
+                              fail_silently=False)
                 except BadHeaderError:
                     messages.error(recipients, "Invalid header found.")
                 else:
