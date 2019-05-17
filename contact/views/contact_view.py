@@ -16,12 +16,13 @@ def contact(request):
         # create a form instance and populate it with data from the request
         contact_form = Contact(request.POST)
 
-        # check whether the form data is valid:
+        # check whether the form data is valid else display error message
         if contact_form.is_valid():
             subject = contact_form.cleaned_data['subject']
             sender_email = contact_form.cleaned_data['sender_email']
             message = contact_form.cleaned_data['message']
 
+            # Email recipients
             recipients = [PYLADIES_EMAIL, ]
 
             # check if the fields are not empty
@@ -39,6 +40,11 @@ def contact(request):
                                      "We will get back to you "
                                      "as soon as possible through your email !")
                     return redirect('contact:contact')
+            else:
+                messages.error(request, "Please no field should be left blank !")
+
+        else:
+            messages.error(request, "Please provide valid information !!")
 
     # if the request is GET (or any other method) create a blank form
     else:
