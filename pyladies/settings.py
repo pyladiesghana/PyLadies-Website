@@ -66,6 +66,7 @@ INSTALLED_APPS = [
     # Our Apps
     'home',
     'contact',
+    'about',
 
 ]
 
