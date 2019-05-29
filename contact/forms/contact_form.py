@@ -2,7 +2,7 @@
 from django import forms
 
 
-class Contact(forms.Form):
+class ContactForm(forms.Form):
     """ Form for processing and validating contact message """
 
     subject = forms.CharField(max_length=100, widget=forms.TextInput(attrs={

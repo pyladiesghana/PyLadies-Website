@@ -4,7 +4,7 @@ from django.contrib import messages
 from django.shortcuts import render, redirect
 
 # Contact app imports
-from contact.forms.contact_form import Contact
+from contact.forms.contact_form import ContactForm
 from contact.utils import PYLADIES_EMAIL
 
 
@@ -14,7 +14,7 @@ def contact(request):
     if request.method == 'POST':
 
         # create a form instance and populate it with data from the request
-        contact_form = Contact(request.POST)
+        contact_form = ContactForm(request.POST)
 
         # check whether the form data is valid else display error message
         if contact_form.is_valid():
@@ -49,7 +49,7 @@ def contact(request):
 
     # if the request is GET (or any other method) create a blank form
     else:
-        contact_form = Contact()
+        contact_form = ContactForm()
 
     context = {'contact_form': contact_form}
     template_name = 'contact/contact.html'
