@@ -1,11 +1,11 @@
 # Django imports
-from django.test import TestCase
+from django.test import SimpleTestCase
 
 # Contact App imports.
 from contact.forms.contact_form import ContactForm
 
 
-class TestContactForm(TestCase):
+class TestContactForm(SimpleTestCase):
     """
        Test contact form with valid and invalid data.
     """
