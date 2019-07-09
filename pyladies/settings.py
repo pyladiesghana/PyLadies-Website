@@ -64,6 +64,7 @@ INSTALLED_APPS = [
     'machina.apps.forum_permission',
 
     # Our Apps
+    'sponsors',
     'home',
     'contact',
     'about',
