@@ -53,13 +53,3 @@ img {
     font-size: 24px !important;
 }
 
-
-.shadow {
-  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: all 0.15s linear;
-}
-
-.shadow:hover {
-  transform: translateY(-4px);
-  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
-}

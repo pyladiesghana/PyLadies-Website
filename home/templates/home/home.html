@@ -203,56 +203,21 @@
       >
         Our Partners
       </h3>
+        {% if partner_logos %}
       <div class="customer-logos slider">
+            {% for partner_logo in partner_logos %}
         <div class="slide">
           <img
-            src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"
+            src="{{ partner_logo }}"
             alt=""
+            class="slide-image"
           />
         </div>
-        <div class="slide">
-          <img
-            src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"
-            alt=""
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"
-            alt=""
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"
-            alt=""
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"
-            alt=""
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"
-            alt=""
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"
-            alt=""
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"
-            alt=""
-          />
-        </div>
+         {% endfor %}
       </div>
+        {% else %}
+            <div class="alert alert-warning text-center"><b>No Partners</b></div>
+        {% endif %}
     </div>
 
     <div class="container" style="margin-bottom:50px">
