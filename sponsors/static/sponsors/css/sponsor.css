@@ -1,0 +1,54 @@
+.campaign-card {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    height: 400px;
+}
+
+.campaign-img {
+    margin-bottom: 25px;
+}
+
+.campaign-info {}
+
+.user-avatar-xl {
+    height: 90px;
+    width: 90px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.facebook-color {
+    color: #3c73df;
+}
+
+.twitter-color {
+    color: #1ea2f2;
+}
+
+.snapchat-color {
+    color: #FFFB00;
+}
+
+.instagram-color {
+    color: #9361fa;
+}
+
+.website-color {
+    color: grey;
+}
+
+.fa-sm {
+    font-size: 24px !important;
+}

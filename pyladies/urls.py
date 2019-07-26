@@ -27,6 +27,7 @@ urlpatterns = [
     path('', include('home.urls', namespace='home')),
     path('contact/', include('contact.urls', namespace='contact')),
     path('about/', include('about.urls', namespace='about')),
+    path('sponsors/', include('sponsors.urls', namespace='sponsors')),
     path('forum/', include(machina_urls)),
     path('admin/', admin.site.urls),
 ]
