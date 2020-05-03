@@ -1,0 +1,14 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django-machina = "==1.0.1"
+django-photologue = "==3.9"
+Django = "==2.2"
+
+[requires]
+python_version = "3.8"
