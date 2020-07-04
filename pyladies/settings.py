@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'contact',
     'about',
     'partners',
+    'events',
 
 ]
 
