@@ -7,7 +7,7 @@ from events.views.upcoming_events_list_view import list_of_upcoming_events
 from events.views.past_events_list_view import list_of_past_events
 
 
-app_name = "partners"
+app_name = "events"
 
 
 urlpatterns = [
