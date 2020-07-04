@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "e22e9c2a7a1c23a190f8208e11a334c4782774f5ba10e8a778afd975b82be598"
+            "sha256": "d83b77d4b50fc78ed9cf5d09404040d0a9e73e2fb3796acf48fea329f2110f3e"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -24,34 +24,6 @@
             "index": "pypi",
             "version": "==2.2.13"
         },
-        "django-haystack": {
-            "hashes": [
-                "sha256:8b54bcc926596765d0a3383d693bcdd76109c7abb6b2323b3984a39e3576028c"
-            ],
-            "version": "==2.8.1"
-        },
-        "django-js-asset": {
-            "hashes": [
-                "sha256:8ec12017f26eec524cab436c64ae73033368a372970af4cf42d9354fcb166bdd",
-                "sha256:c163ae80d2e0b22d8fb598047cd0dcef31f81830e127cfecae278ad574167260"
-            ],
-            "version": "==1.2.2"
-        },
-        "django-machina": {
-            "hashes": [
-                "sha256:1205badaadb44eecbe31124de17c5874aa934eba208b95f0505271eca4a5e96d",
-                "sha256:1f9fdc80a585b30983fae1351ff488c6ad9c36494122f80626cfa28d5545d2fc"
-            ],
-            "index": "pypi",
-            "version": "==1.0.1"
-        },
-        "django-mptt": {
-            "hashes": [
-                "sha256:90eb236eb4f1a92124bd7c37852bbe09c0d21158477cc237556d59842a91c509",
-                "sha256:dfdb3af75ad27cdd4458b0544ec8574174f2b90f99bc2cafab6a15b4bc1895a8"
-            ],
-            "version": "==0.11.0"
-        },
         "django-photologue": {
             "hashes": [
                 "sha256:4bda45c6e0bcd68def73a9493168a2870008f8fc363ec339f248afa0cd62e6c2",
@@ -66,26 +38,12 @@
             ],
             "version": "==3.0.0"
         },
-        "django-widget-tweaks": {
-            "hashes": [
-                "sha256:9f91ca4217199b7671971d3c1f323a2bec71a0c27dec6260b3c006fa541bc489",
-                "sha256:f80bff4a8a59b278bb277a405a76a8b9a884e4bae7a6c70e78a39c626cd1c836"
-            ],
-            "version": "==1.4.8"
-        },
         "exifread": {
             "hashes": [
                 "sha256:4aa9d227db5c4cd65d87520076140a6f84e33363e08e649b87c7afec6bab60ab",
                 "sha256:79e244f2eb466709029e8806fe5e2cdd557870c3db5f68954db0ef548d9320ad"
             ],
             "version": "==2.1.2"
-        },
-        "markdown2": {
-            "hashes": [
-                "sha256:89526090907ae5ece66d783c434b35c29ee500c1986309e306ce2346273ada6a",
-                "sha256:e6b401ec80b75e76a6b3dbb2c8ade513156fa55fa6c30b9640a1abf6184a07c8"
-            ],
-            "version": "==2.3.9"
         },
         "pillow": {
             "hashes": [
