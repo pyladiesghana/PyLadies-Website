@@ -29,7 +29,7 @@ urlpatterns = [
     path('about/', include('about.urls', namespace='about')),
     path('sponsors/', include('sponsors.urls', namespace='sponsors')),
     path('partners/', include('partners.urls', namespace='partners')),
-    path('forum/', include(machina_urls)),
+    path('events/', include('events.urls', namespace='events')),
     path('admin/', admin.site.urls),
 ]
 
