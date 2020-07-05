@@ -13,21 +13,76 @@
 {% endblock stylesheets %}
 
 {% block content %}
-    <section id="about">
+    <section id="contact">
         <div class="container">
           <div class="row">
-            <div class="col-4">
-              <div class="list-group" id="list-tab" role="tablist">
-                <a class="list-group-item list-group-item-action active" id="list-prince-list" data-toggle="list" href="#list-prince" role="tab" aria-controls="prince">The Little Prince</a>
-                <a class="list-group-item list-group-item-action" id="list-wild-list" data-toggle="list" href="#list-wild" role="tab" aria-controls="wild">Where the Wild Things Are</a>
-                <a class="list-group-item list-group-item-action" id="list-solitude-list" data-toggle="list" href="#list-solitude" role="tab" aria-controls="messages">One Hundred Years of Solitude</a>
-              </div>
-            </div>
-            <div class="col-6">
+            {% include 'sidebar.html' %}
+            <div class="col-8">
               <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="list-prince" role="tabpanel" aria-labelledby="list-prince-list">Moral allegory and spiritual autobiography, The Little Prince is the most translated book in the French language. With a timeless charm it tells the story of a little boy who leaves the safety of his own tiny planet to travel the universe, learning the vagaries of adult behaviour through a series of extraordinary encounters.</div>
-                <div class="tab-pane fade" id="list-wild" role="tabpanel" aria-labelledby="list-wild-list">One night Max puts on his wolf suit and makes mischief of one kind and another, so his mother calls him 'Wild Thing' and sends him to bed without his supper. That night a forest begins to grow in Max's room and an ocean rushes by with a boat to take Max to the place where the wild things are. Max tames the wild things and crowns himself as their king, and then the wild rumpus begins.</div>
-                <div class="tab-pane fade" id="list-solitude" role="tabpanel" aria-labelledby="list-solitude-list">The brilliant, bestselling, landmark novel that tells the story of the Buendia family, and chronicles the irreconcilable conflict between the desire for solitude and the need for love—in rich, imaginative prose that has come to define an entire genre known as "magical realism."</div>
+                <div class="tab-pane fade show active" id="list-prince" role="tabpanel" aria-labelledby="list-prince-list">
+                  <div class="event-list">
+                    <div class="container p-0 text-center">
+                      <ul class="flex-container d-flex flex-row flex-wrap justify-content-center p-0">
+                        <li class="col-sm-12 col-md-12 col-lg-12 p-0">
+                          <div class="flex-item d-flex flex-row flex-wrap unit-bg rounded custom-padding border-white-2">
+                            <div class="date-outer col-sm-12 col-md-2 col-lg-2 m-0 date-outer-padding">
+                              <div class="date-container border-white-1 itixy-color">
+                                <time datetime="2019-07-08">
+                                  <span class="day-week-container font-l font-bold">Monday</span><br>
+                                  <span class="day-month-container font-l font-bold">08/07</span><br>
+                                  <span class="year-container font-s font-bold">2019</span>
+                                </time>
+                                <hr>
+                                <time datetime="2018-07-08T20:00:00">
+                                  <span class="time-container font-m font-bold">20:00</span>
+                                </time>
+                              </div>
+                            </div>
+                            <figure class="col-sm-12 col-md-4 col-lg-3 m-0 figure-padding">
+                              <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(85).jpg" data-size="1600x1067"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(85).jpg" alt="" class="img-fluid border-white-1"></a>
+                            </figure>
+                            <div class="info col-sm-12 col-md-6 col-lg-7 text-center p-0">
+                              <h2 class="font-l font-bold">Event title 1</h2>
+                              <p class="font-m">Event description 1</p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="list-wild" role="tabpanel" aria-labelledby="list-wild-list">
+                    <div class="event-list">
+                    <div class="container p-0 text-center">
+                      <ul class="flex-container d-flex flex-row flex-wrap justify-content-center p-0">
+                        <li class="col-sm-12 col-md-12 col-lg-12 p-0">
+                          <div class="flex-item d-flex flex-row flex-wrap unit-bg rounded custom-padding border-white-2">
+                            <div class="date-outer col-sm-12 col-md-2 col-lg-2 m-0 date-outer-padding">
+                              <div class="date-container border-white-1 itixy-color">
+                                <time datetime="2019-07-08">
+                                  <span class="day-week-container font-l font-bold">Monday</span><br>
+                                  <span class="day-month-container font-l font-bold">08/07</span><br>
+                                  <span class="year-container font-s font-bold">2019</span>
+                                </time>
+                                <hr>
+                                <time datetime="2018-07-08T20:00:00">
+                                  <span class="time-container font-m font-bold">20:00</span>
+                                </time>
+                              </div>
+                            </div>
+                            <figure class="col-sm-12 col-md-4 col-lg-3 m-0 figure-padding">
+                              <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(85).jpg" data-size="1600x1067"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(85).jpg" alt="" class="img-fluid border-white-1"></a>
+                            </figure>
+                            <div class="info col-sm-12 col-md-6 col-lg-7 text-center p-0">
+                              <h2 class="font-l font-bold">Event title 1</h2>
+                              <p class="font-m">Event description 1</p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
