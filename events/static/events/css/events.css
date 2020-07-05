@@ -4,3 +4,181 @@ body{
 .light-blue {
   background-color: #E0F5FF !important;
 }
+
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color:  #0d2034 !important;
+    border-color:  #0d2034 !important;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box !important;
+}
+
+body {
+  font-family: Lora, sans-serif !important;
+  font-size: 16px !important;
+  color: #fff !important;
+}
+
+body a {
+  color: #fff;
+  text-decoration: none;
+}
+body a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+body .font-bold {
+  font-weight: bold;
+}
+body .font-s {
+  font-size: 1.1rem;
+}
+body .font-m {
+  font-size: 1.3rem;
+}
+body .font-l {
+  font-size: 1.5rem;
+}
+body .rounded {
+  border-radius: 0.4em !important;
+}
+body .border-white-1 {
+  border: 1px solid #fff;
+}
+body .border-white-2 {
+  border: 2px solid #fff;
+}
+body .unit-bg {
+  background-color: #0d2034 !important;
+}
+body .date-outer-padding {
+  padding: 0.6em 0.6em 0 0.6em !important;
+}
+body .figure-padding {
+  padding: 0 0.6em 1em 0.6em !important;
+}
+body .custom-padding {
+  padding: 0.6em !important;
+}
+body .itixy-color {
+  background-color: rgba(189, 0, 69, 0.7);
+}
+body .event-list .container .flex-container {
+  list-style-type: none;
+}
+body .event-list .container .flex-container .flex-item .date-outer .date-container hr {
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 80%;
+  border-top: 1px solid #fff;
+}
+body .event-list .container .flex-container .flex-item figure img {
+  border-top: none;
+}
+body .event-list .container .flex-container .flex-item .event-btn .btn-itixy {
+  width: 8em;
+  padding: 1em;
+}
+body .event-list .container .flex-container .flex-item .event-btn .btn-itixy:hover, body .event-list .container .flex-container .flex-item .event-btn .btn-itixy:active {
+  background-color: #bd0045 !important;
+}
+
+@media screen and (min-width: 768px) {
+  .flex-container .flex-item .date-outer {
+    padding: 0 !important;
+  }
+  .flex-container .flex-item .date-outer .date-container {
+    min-height: 6em !important;
+    height: 6.64em !important;
+  }
+  .flex-container .flex-item .date-outer .date-container .day-week-container {
+    font-size: 1.1rem !important;
+  }
+  .flex-container .flex-item .date-outer .date-container .day-month-container {
+    font-size: 1.3rem !important;
+  }
+  .flex-container .flex-item .date-outer .date-container .year-container {
+    font-size: 0.8rem !important;
+  }
+  .flex-container .flex-item .date-outer .date-container .time-container {
+    font-size: 1.1rem !important;
+  }
+  .flex-container .flex-item figure {
+    padding: 0 !important;
+  }
+  .flex-container .flex-item figure img {
+    border-top: 1px solid #fff !important;
+    border-left: none !important;
+    width: 100% !important;
+    min-height: 6em !important;
+    height: 6.64em !important;
+  }
+  .flex-container .flex-item .info {
+    margin-top: 1em !important;
+  }
+}
+@media (min-width: 992px) {
+  .date-outer.col-lg-2 {
+    flex: 1 1 13% !important;
+    max-width: 13% !important;
+  }
+
+  .info.col-lg-7 {
+    flex: 1 1 62% !important;
+    max-width: 62% !important;
+  }
+}
+@media (min-width: 1200px) {
+  .date-outer.col-lg-2 {
+    flex: 1 1 11% !important;
+    max-width: 11% !important;
+  }
+
+  .info.col-lg-7 {
+    flex: 1 1 64% !important;
+    max-width: 64% !important;
+  }
+}
+/* Pagination styles */
+.pagination {
+  display: block;
+  width: 75%;
+  margin: 1em auto;
+  text-align: center;
+}
+.pagination:after {
+  content: '';
+  clear: both;
+}
+
+.pagination-button {
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  background-color: rgba(107, 27, 53, 0.4) !important;
+  color: #46132f;
+  font-weight: bold;
+  transition: background 0.1s, color 0.1s;
+}
+.pagination-button:hover, .pagination-button.active {
+  border: 1px solid #fff !important;
+  color: #fff;
+}
+.pagination-button:first-of-type {
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.pagination-button:nth-child(2), .pagination-button:nth-child(3), .pagination-button:nth-child(4), .pagination-button:nth-child(5) {
+  border-left: none;
+  border-right: none;
+}
+.pagination-button:last-of-type {
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
