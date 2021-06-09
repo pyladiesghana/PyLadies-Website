@@ -7,7 +7,7 @@ verify_ssl = true
 
 [packages]
 django-photologue = "==3.9"
-Django = "==2.2.13"
+Django = "==2.2.22"
 
 [requires]
 python_version = "3.8"
