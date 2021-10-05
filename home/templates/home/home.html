@@ -6,282 +6,494 @@
 {% endblock title %}
 
 {% block content %}
-     <!-- Slider -->
-    <header>
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-ride="carousel"
-      >
-        <ol class="carousel-indicators">
-          <li
-            data-target="#carouselExampleIndicators"
-            data-slide-to="0"
-            class="active"
-          ></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <!-- Slide One - Set the background image for this slide in the line below -->
-          <div
-            class="carousel-item active"
-            style="background-image: url({%  static 'home/img/slider-3.jpeg' %})"
-          >
-            <div class="carousel-caption d-none d-md-block">
-              <h2 class="display-4">First Slide</h2>
-              <p class="lead">This is a description for the first slide.</p>
-            </div>
-          </div>
-          <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div
-            class="carousel-item"
-            style="background-image: url({% static 'home/img/slider-1.jpeg' %})"
-          >
-            <div class="carousel-caption d-none d-md-block">
-              <h2 class="display-4">Second Slide</h2>
-              <p class="lead">This is a description for the second slide.</p>
-            </div>
-          </div>
-          <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div
-            class="carousel-item"
-            style="background-image: url({% static 'home/img/slider-2.jpeg' %})"
-          >
-            <div class="carousel-caption d-none d-md-block">
-              <h2 class="display-4">Third Slide</h2>
-              <p class="lead">This is a description for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </header>
 
-    <!-- Story & Initiatives -->
-    <div class="container">
-      <div class="row pyladies">
-        <!-- <div class="col-sm-6">
-          <div class="card shadow text-center">
-            <div class="card-body">
-              <h5 class="card-title text-center text-uppercase">Our Story</h5>
-              <p class="card-text text-left">
-                With supporting text below as a natural lead-in to additional
-                content. With supporting text below as a natural lead-in to
-                additional content. With supporting text below as a natural
-                lead-in to additional content. With supporting text below as a
-                natural lead-in to additional content.
-              </p>
-              <a href="#" class="btn btn-primary ">Go somewhere</a>
-            </div>
-          </div>
+ 
+    <!-- Promo Block -->
+    <section class="g-flex-centered g-bg-pos-center g-bg-img-hero g-pos-rel g-z-index-1 g-overflow-hidden" style="background-image: url({% static 'img/header.png' %});" data-calc-target="#js-header">
+      <div class="g-pos-abs g-bottom-0 g-right-0" data-animation="fadeInUp" data-animation-delay="100" data-animation-duration="1500">
+        <img class="img-fluid" src="{% static 'img/wordmark.png' %}" alt="Image Description">
+      </div>
+       
+
+      <div class="container text-center g-z-index-1">
+        <div class="mb-4">
+          <h1 class="h2 d-inline-block g-color-black g-font-weight-700 g-font-size-40 g-font-size-75--md text-uppercase g-line-height-1" data-animation="fadeInDown" data-animation-delay="1000" data-animation-duration="1500">Welcome to</h1><br>
+          <h2 class="h2 d-inline-block g-color-black g-font-weight-700 g-font-size-40 g-font-size-75--md text-uppercase g-line-height-1" data-animation="fadeInDown" data-animation-delay="1300" data-animation-duration="1500">PyLadies&nbsp;</h2>
+          <h2 class="h2 d-inline-block g-color-darkred g-font-weight-700 g-font-size-40 g-font-size-75--md text-uppercase g-line-height-1" data-animation="fadeInDown" data-animation-delay="1500" data-animation-duration="1500">Ghana</h2>
         </div>
-        <div class="col-sm-6">
-          <div class="card shadow ">
-            <div class="card-body">
-              <h5 class="card-title text-center text-uppercase">
-                Our Initiatives
-              </h5>
-              <p class="card-text text-left">
-                With supporting text below as a natural lead-in to additional
-                content. With supporting text below as a natural lead-in to
-                additional content. With supporting text below as a natural
-                lead-in to additional content. With supporting text below as a
-                natural lead-in to additional content.
-              </p>
-              <a href="#" class="btn btn-primary ">Go somewhere</a>
-            </div>
-          </div>
+
+        <div class="mx-auto g-max-width-600 g-overflow-hidden">
+          <p class="g-color-black g-font-size-18 g-font-size-24--md g-mb-40" data-animation="fadeInDown" data-animation-delay="1600" data-animation-duration="1500">
+          </p>
         </div>
-      </div> -->
-        <div class="col-sm-6">
-          <div class="card mb-3 shadow" style="max-width: 540px;">
-            <div class="row no-gutters">
-              <div class="col-md-4">
-                <img
-                  src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"
-                  class="card-img"
-                  alt="about_us_image"
-                />
+
+        <div data-animation="fadeInDown" data-animation-delay="2000" data-animation-duration="1500"> 
+        </div>
+      </div>
+    </section>
+    <!-- End Promo Block -->
+
+    <!-- Icon Blocks -->
+    <section class="text-center">
+      <div class="row no-gutters">
+        <!-- Icon Blocks -->
+        <div class="col-lg-4 u-bg-overlay g-bg-img-hero g-bg-black-opacity-0_6--after g-color-white text-center g-pa-60" style="background-image: url({% static 'img/img1.jpg' %}");">
+          <div class="u-bg-overlay__inner"><br>
+            <span class="u-icon-v2 u-icon-size--lg u-shadow-v24 rounded-circle g-mb-25">
+                <i class="icon-finance-226 u-line-icon-pro"></i>
+              </span>
+            <h3 class="h5 text-uppercase g-font-weight-600 g-mb-15">We code</h3>
+            <p class="g-font-size-16 g-mb-20"><br></p>
+             </div>
+        </div>
+        <!-- End Icon Blocks -->
+
+        <!-- Icon Blocks -->
+        <div class="col-lg-4 u-bg-overlay g-bg-img-hero g-bg-black-opacity-0_6--after g-color-white text-center g-pa-60" style="background-image: url({% static 'img/img2.jpg' %}");">
+          <div class="u-bg-overlay__inner"><br>
+            <span class="u-icon-v2 u-icon-size--lg u-shadow-v24 rounded-circle g-mb-25">
+                <i class="icon-finance-196 u-line-icon-pro"></i>
+              </span>
+            <h3 class="h5 text-uppercase g-font-weight-600 g-mb-15">We collaborate</h3>
+            <p class="g-font-size-16 g-mb-20"><br></p>
               </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title text-primary text-uppercase">
-                    Our Story
-                  </h5>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <p class="card-text">
-                    <a href="{% url 'about:about' %}" class="btn btn-primary story"
-                      >Continue reading</a
-                    >
+        </div>
+        <!-- End Icon Blocks -->
+
+        <!-- Icon Blocks -->
+        <div class="col-lg-4 u-bg-overlay g-bg-img-hero g-bg-black-opacity-0_6--after g-color-white text-center g-pa-60" style="background-image: url({% static 'img/img3.jpg' %}");">
+          <div class="u-bg-overlay__inner"><br>
+            <span class="u-icon-v2 u-icon-size--lg u-shadow-v24 rounded-circle g-mb-25">
+                <i class="icon-finance-147 u-line-icon-pro"></i>
+              </span>
+            <h3 class="h5 text-uppercase g-font-weight-600 g-mb-15">We inspire</h3>
+            <p class="g-font-size-16 g-mb-20"><br></p>
+             </div>
+        </div>
+        <!-- End Icon Blocks -->
+      </div>
+    </section>
+    <!-- End Icon Blocks -->
+
+    <!-- About Us -->
+    <section id="about" class="g-py-100">
+      <div class="container">
+        <article class="row">
+          <!-- Article Content -->
+          <div class="col-lg-8 g-mb-30">
+            <header class="u-heading-v6-2 g-mb-20">
+              <h6 class="g-font-size-12 text-uppercase g-font-weight-600 g-pl-90"></h6>
+              <h3 class="u-heading-v6__title g-color-gray-dark-v2 g-brd-primary text-uppercase g-font-weight-600 g-mb-15">About Us</h3>
+            </header>
+
+            <div class="g-pl-90--sm">
+              <p class="lead g-mb-40 g-font-weight-400">
+                PyLadies Ghana is an initiative under the Python Software Community in Ghana (<a href="https://www.pythonghana.org/">Python Ghana</a>) focused on bridging the diversity gap in tech by empowering more ladies and introducing them to tech using the Python Programming language. 
+              </p>
+              <p class="lead g-mb-40 g-font-weight-400">
+                We aim to promote, educate and advance a diverse community through outreach, education, conferences, events and social gatherings.
+                <br>
+                PyLadies also aims to provide a friendly support network for women and a bridge to the larger Python world. Anyone with an interest in this is encouraged to join us!
+              </p>
+ 
+            </div>
+          </div>
+          <!-- End Article Content -->
+
+          <!-- Article Image -->
+          <div class="col-lg-4 align-self-center">
+            <img class="img-fluid w-60 rounded" src="{% static 'img/pyladies.png' %}" alt="Iamge Description">
+          </div>
+          <!-- End Article Image -->
+        </article>
+      </div>
+    </section>
+    <!-- End About Us -->
+ 
+    <!-- Our Services -->
+    <section class="g-bg-secondary g-py-100">
+      <div class="container">
+
+
+
+
+
+        <header class="text-center g-width-80x--md mx-auto g-mb-70">
+          <div class="u-heading-v6-2 text-center text-uppercase g-mb-20"> 
+            <h2 class="h3 u-heading-v6__title g-brd-primary g-color-gray-dark-v2 g-font-weight-600">Why Python?</h2>
+          </div>
+          <p class="lead g-font-weight-400">Python is a general-purpose language, which means it can be used to build just about anything, which will be made easy with the right tools/libraries. 
+            Professionally, Python is great for backend web development, data analysis, artificial intelligence, and scientific computing. Many developers have also used Python 
+            to build productivity tools, games, and desktop apps, so there are plenty of resources to help you learn how to do those as well.<em>“Why” Python has emerged as one of 
+              the most popular programming languages on the market are</em> :</p>
+					
+            </header>
+
+        <!-- Icon Blocks -->
+        <div class="row">
+          <div class="col-lg-6 g-mb-30">
+            <!-- Icon Blocks -->
+            <div class="u-shadow-v21 g-bg-white rounded g-pa-30">
+              <div class="media g-mb-15">
+                <div class="d-flex mr-4">
+                  <span class="g-color-gray-dark-v5 g-font-size-26">
+                    <i class="icon-finance-090 u-line-icon-pro"></i>
+                  </span>
+                </div>
+                <div class="media-body">
+                  <h3 class="h5 g-color-black mb-20">Quick to setup </h3>
+                  <div class="g-width-30 g-brd-bottom g-brd-primary g-my-15"></div>
+                  <p class="g-color-gray-dark-v2 g-mb-0 g-font-weight-400">
+                    Python is easy to download, even for the newbie; careful documentation takes you through the download and setup steps in either Windows, Mac, or Linux environments. 
+                    Tons of support and documentation make Python learning fairly manageable. If you want to jump right into Python without any need for download on your machine, just go 
+                    to one of many online tutorials like Codecademy.
                   </p>
                 </div>
               </div>
             </div>
+            <!-- End Icon Blocks -->
           </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card mb-3 shadow" style="max-width: 540px;">
-            <div class="row no-gutters">
-              <div class="col-md-4">
-                <img
-                  src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"
-                  class="card-img"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title text-success text-uppercase">
-                    Our Initiatives
-                  </h5>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <p class="card-text">
-                    <a href="#" class="btn btn-primary story"
-                      >Continue reading</a
-                    >
+
+          <div class="col-lg-6 g-mb-30">
+            <!-- Icon Blocks -->
+            <div class="u-shadow-v21 g-bg-white rounded g-pa-30">
+              <div class="media g-mb-15">
+                <div class="d-flex mr-4">
+                  <span class="g-color-gray-dark-v5 g-font-size-26">
+                    <i class="icon-finance-012 u-line-icon-pro"></i>
+                  </span>
+                </div>
+                <div class="media-body">
+                  <h3 class="h5 g-color-black mb-20">Python is fast</h3>
+                  <div class="g-width-30 g-brd-bottom g-brd-primary g-my-15"></div>
+                  <p class="g-color-gray-dark-v2 g-mb-0">
+                    Python has developed a reputation as a solid, high-performance language. Lots has been done in recent years to get to this point. The PyPy project aims to speed up Python as
+                     a whole (and is doing a great job of it). And Numba is another tool that can offer amazing speedups by implementing high performance functions written directly in Python.
                   </p>
                 </div>
               </div>
             </div>
+            <!-- End Icon Blocks -->
           </div>
         </div>
-      </div>
-    </div>
+        <!-- End Icon Blocks -->
 
-    <!-- Sponsors -->
-    <div class="container sponsors">
-      <h3 style="text-align:center; border-bottom:solid 1px #eee; margin-bottom: 2rem;">
-        Our Sponsors
-      </h3>
-        {% if sponsor_logos %}
-      <div class="customer-logos slider">
-            {% for sponsor_logo in sponsor_logos %}
-        <div class="slide">
-          <img
-            src="{{ sponsor_logo }}"
-            alt=""
-            class="slide-image"
-          />
-        </div>
-         {% endfor %}
-      </div>
-        {% else %}
-            <div class="alert alert-warning text-center"><b>No Sponsors</b></div>
-        {% endif %}
-    </div>
-
-    <!-- Partners -->
-    <div class="container partners">
-      <h3
-        style="text-align:center; border-bottom:solid 1px #eee; margin-bottom: 2rem;"
-      >
-        Our Partners
-      </h3>
-        {% if partner_logos %}
-      <div class="customer-logos slider">
-            {% for partner_logo in partner_logos %}
-        <div class="slide">
-          <img
-            src="{{ partner_logo }}"
-            alt=""
-            class="slide-image"
-          />
-        </div>
-         {% endfor %}
-      </div>
-        {% else %}
-            <div class="alert alert-warning text-center"><b>No Partners</b></div>
-        {% endif %}
-    </div>
-
-    <div class="container" style="margin-bottom:50px">
-      <div class="row">
-        <div class="col-sm-12">
-          <!-- Tweets -->
-          <div class="container tweets">
-            <h3>
-              Recent Tweets
-            </h3>
-            <div class="card example-1 scrollbar-ripe-malinka">
-              <div class="card-body">
-                <a
-                  class="twitter-timeline"
-                  href="https://twitter.com/pyladies/lists/pyladies-locations?ref_src=twsrc%5Etfw"
-                  >A Twitter List by pyladies</a
-                >
-                <script
-                  async
-                  src="https://platform.twitter.com/widgets.js"
-                  charset="utf-8"
-                ></script>
+        <!-- Icon Blocks -->
+        <div class="row">
+          <div class="col-lg-6 g-mb-30">
+            <!-- Icon Blocks -->
+            <div class="u-shadow-v21 g-bg-white rounded g-pa-30">
+              <div class="media g-mb-15">
+                <div class="d-flex mr-4">
+                  <span class="g-color-gray-dark-v5 g-font-size-26">
+                    <i class="icon-finance-088 u-line-icon-pro"></i>
+                  </span>
+                </div>
+                <div class="media-body">
+                  <h3 class="h5 g-color-black mb-20">Python has broad support</h3>
+                  <div class="g-width-30 g-brd-bottom g-brd-primary g-my-15"></div>
+                  <p class="g-color-gray-dark-v2 g-mb-0">
+                    The applications for Python are broad and varied; it’s used by individuals and big industry players alike in everything from systems automation, testing, and ETL to gaming, 
+                    CGI and web development. Disney uses Python to help power their creative process. And Mozilla releases tons of open source packages built in Python. Bank of America uses 
+                    Python to build new products and interfaces within the bank’s technology infrastructure.Python is widely used by a number of big companies like Google, Pinterest, Instagram, 
+                    Disney, Yahoo!, Nokia, IBM, and many others.Not to mention, since a lot of big companies rely on the language, you can make good money as a Python developer.
+                  </p>
+                </div>
               </div>
             </div>
+            <!-- End Icon Blocks -->
+          </div>
+
+          <div class="col-lg-6 g-mb-30">
+            <!-- Icon Blocks -->
+            <div class="u-shadow-v21 g-bg-white rounded g-pa-30">
+              <div class="media g-mb-15">
+                <div class="d-flex mr-4">
+                  <span class="g-color-gray-dark-v5 g-font-size-26">
+                    <i class="icon-finance-086 u-line-icon-pro"></i>
+                  </span>
+                </div>
+                <div class="media-body">
+                  <h3 class="h5 g-color-black mb-20">Ease of use</h3>
+                  <div class="g-width-30 g-brd-bottom g-brd-primary g-my-15"></div>
+                  <p class="g-color-gray-dark-v2 g-mb-0">
+                    Python gets a lot of accolades for being easy to learn, and rightfully so. The learning curve is very gradual. Other languages can be quite steep. Python places a heavy 
+                    emphasis on readability, as shown by its comparison with other object-oriented languages.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Icon Blocks -->
           </div>
         </div>
-{#        <div class="col-sm-6">#}
-{#          <!-- Tweets -->#}
-{#          <div class="container tweets">#}
-{#            <h3>#}
-{#              Upcoming Events#}
-{#            </h3>#}
-{#            <div#}
-{#              class="card example-1 square scrollbar-dusty-grass square thin"#}
-{#            >#}
-{#              <div class="card-body">#}
-{#                <h4 id="section1"><strong>Fourth title of the news</strong></h4>#}
-{#                <p>#}
-{#                  Ad leggings keytar, brunch id art party dolor labore.#}
-{#                  Pitchfork yr enim lo-fi before they sold out qui. Tumblr#}
-{#                  farm-to-table bicycle rights whatever. Anim keffiyeh carles#}
-{#                  cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon#}
-{#                  irure. Cosby sweater lomo jean shorts, williamsburg hoodie#}
-{#                  minim qui you probably haven't heard of them et cardigan trust#}
-{#                  fund culpa biodiesel wes anderson aesthetic. Nihil tattooed#}
-{#                  accusamus, cred irony biodiesel keffiyeh artisan ullamco#}
-{#                  consequat.#}
-{#                </p>#}
-{##}
-{#                <p>#}
-{#                  Ad leggings keytar, brunch id art party dolor labore.#}
-{#                  Pitchfork yr enim lo-fi before they sold out qui. Tumblr#}
-{#                  farm-to-table bicycle rights whatever. Anim keffiyeh carles#}
-{#                  cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon#}
-{#                  irure. Cosby sweater lomo jean shorts, williamsburg hoodie#}
-{#                  minim qui you probably haven't heard of them et cardigan trust#}
-{#                  fund culpa biodiesel wes anderson aesthetic. Nihil tattooed#}
-{#                  accusamus, cred irony biodiesel keffiyeh artisan ullamco#}
-{#                  consequat.#}
-{#                </p>#}
-{#              </div>#}
-{#            </div>#}
-{#          </div>#}
-{#        </div>#}
+        <!-- End Icon Blocks -->
+ 
+
+
+
+
+        <br><br><br><br>
+        <div class="text-center">
+          <header class="u-heading-v6-2 g-mb-20">
+            <h6 class="g-font-size-12 text-uppercase g-font-weight-600 g-pl-90"></h6>
+            <h3 class="u-heading-v6__title g-color-gray-dark-v2 g-brd-primary text-uppercase g-font-weight-600 g-mb-15">Who uses Python?</h3>
+          </header> 
+
+
+          <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5">
+            <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{% static 'img/wup/twilio.png' %}" alt="Image Description">
+        
+            <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+              <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">Twillio</h3>
+            </div>
+          </a>
+        
+          <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5">
+            <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{% static 'img/wup/google.png' %}" alt="Image Description">
+        
+            <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+              <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">Google</h3>
+            </div>
+          </a>
+        
+          <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5">
+            <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{% static 'img/wup/jpm.png' %}" alt="Image Description">
+        
+            <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+              <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0"> JP MORGAN CHASE & CO.</h3>
+            </div>
+          </a>
+        
+          <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5">
+            <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{% static 'img/wup/fb.png' %}" alt="Image Description">
+        
+            <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+              <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">Facebook</h3>
+            </div>
+          </a>
+        
+          <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5">
+            <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{% static 'img/wup/db.jpg' %}" alt="Image Description">
+        
+            <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+              <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">Dropbox</h3>
+            </div>
+          </a>
+        
+          <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5">
+            <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{% static 'img/wup/cia.jpg' %}" alt="Image Description">
+        
+            <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+              <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">CIA</h3>
+            </div>
+          </a>
+        
+          <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5">
+            <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{% static 'img/wup/nasa.jpg' %}" alt="Image Description">
+        
+            <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+              <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">NASA</h3>
+            </div>
+          </a>
+          <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5">
+            <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{% static 'img/wup/ig.jpg' %}" alt="Image Description">
+        
+            <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+              <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">Instagram</h3>
+            </div>
+          </a>
+          <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5">
+            <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{% static 'img/wup/quora.png' %}" alt="Image Description">
+        
+            <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+              <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">Quora</h3>
+            </div>
+          </a>
+          <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5">
+            <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{% static 'img/wup/sf.jpeg' %}" alt="Image Description">
+        
+            <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+              <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">Spotify</h3>
+            </div>
+          </a>
+        
+          <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5">
+            <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{% static 'img/wup/nf.png' %}" alt="Image Description">
+        
+            <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+              <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">Netflex</h3>
+            </div>
+          </a>
+        
+          <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5">
+            <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{% static 'img/wup/nvidia.jpg' %}" alt="Image Description">
+        
+            <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+              <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">NVIDIA</h3>
+            </div>
+          </a>
+
+          <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5">
+            <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{% static 'img/wup/Stripe.png' %}" alt="Image Description">
+        
+            <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+              <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">Stripe</h3>
+            </div>
+          </a>
+        
+          <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5">
+            <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{% static 'img/wup/paypal.png' %}" alt="Image Description">
+        
+            <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+              <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">PayPal</h3>
+            </div>
+          </a>
+          <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5">
+            <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{% static 'img/wup/yahoo.jpg' %}" alt="Image Description">
+        
+            <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+              <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">Yahoo</h3>
+            </div>
+          </a>
+          <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5">
+            <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{% static 'img/wup/yt.jpeg' %}" alt="Image Description">
+        
+            <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+              <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">Youtube</h3>
+            </div>
+          </a>
+
+          <a class="d-inline-block u-block-hover--flip g-width-100 g-brd-around g-brd-gray-light-v4 g-bg-white g-px-15 g-py-30 g-ma-5">
+            <img class="u-block-hover__img u-block-hover__main--flip-vert" src="{% static 'img/wup/more.png' %}" alt="Image Description">
+        
+            <div class="u-block-hover__additional--flip-vert g-bg-primary g-color-white g-pa-10">
+              <h3 class="g-absolute-centered g-font-weight-600 g-font-size-14 mb-0">and more ...</h3>
+            </div>
+          </a>
+        </div>
+
+
+
+
+
+
+
+           <!-- Masonry --><br><br><br><br>
+           <div class="masonry-grid row mb-5">
+            <div class="masonry-grid-sizer col-sm-1"></div>
+            <div class="masonry-grid-item col-lg-6 g-mb-100">
+              <div class="g-pr-40--lg">
+                <!-- Heading --> 
+                <header class="u-heading-v6-2 g-mb-20">
+                  <h6 class="g-font-size-12 text-uppercase g-font-weight-600 g-pl-90"></h6>
+                  <h3 class="u-heading-v6__title g-color-gray-dark-v2 g-brd-primary text-uppercase g-font-weight-600 g-mb-15">Join Us</h3>
+                </header> 
+                <p class="lead mb-5">We are a creative studio focusing on culture, luxury, editorial &amp; art. Somewhere between sophistication and simplicity. This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing
+                  out the wrinkles is key.</p>
+                <a class="btn btn-xl u-btn-outline-black g-font-weight-600 g-font-size-default g-px-35" href="#">I am convinced</a>
+                <!-- End Heading -->
+              </div>
+            </div> 
+            <div class="masonry-grid-item col-sm-6 col-lg-3 mt-5 g-mb-30">
+              <div data-parallaxanimation='[{property: "transform", value:" translate3d(0,px,0)", initial:"25", mid:"0", final:"-25"}]'>
+                <img class="img-fluid w-100" src="../../assets/img-temp/400x570/img1.jpg' %}"" alt="Image Description">
+              </div>
+            </div> 
+          </div>
+          <!-- End Masonry -->
+      </div>
+    </section>
+    <!-- End Our Services -->
+ 
+       
+    <section class="  g-py-100">
+      <div class="container">  
+        <div id="shortcode6">
+          <div class="shortcode-html">
+            <!-- Banners -->
+            <div class="row align-items-stretch">
+              <div class="col-md-6 g-mb-30">
+               <!-- Article -->
+    <article class="u-shadow-v22">
+      <figure class="g-pos-rel">
+        <img class="img-fluid w-100" src="https://pbs.twimg.com/media/FAm0IdiXoAAIQfv?format=jpg&name=small" alt="Image Description">
+        <figcaption class="text-uppercase text-center g-line-height-1_2 g-bg-white-opacity-0_8 g-color-gray-dark-v2 g-pos-abs g-top-20 g-px-15 g-py-10">
+          <strong class="d-block">07</strong>
+          <hr class="g-brd-gray-dark-v2 my-1">
+          <small class="d-block">Jul</small>
+        </figcaption>
+      </figure>
+
+      <div class="g-pa-30">
+        <h3 class="h5 g-mb-15">
+          <a class="u-link-v5 g-color-gray-dark-v2 g-color-primary--hover">Guess the Word</a>
+        </h3>
+
+        <p>Nullam elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est volutpat at. Sed viverra cursus nibh.</p>
+
+        <hr class="g-brd-gray-light-v4 g-my-20">
+
+       
+
+                <!-- Figure Social Icons -->
+                <ul class="list-unstyled mb-0"> 
+                  <li class="list-inline-item mx-0">
+                    <a class="u-icon-v1 u-icon-size--sm g-font-size-default g-color-gray-dark-v2 g-color-twitter--hover " href="https://twitter.com/{{ team.twitter }}" target="/">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>   
+                  <li class="list-inline-item mx-0">
+                    <a class="u-icon-v1 u-icon-size--sm g-font-size-default g-color-gray-dark-v2 g-color-primary--hover" href="https://www.linkedin.com/{{ team.linkedin }}" target="/">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </li> 
+                  
+                </ul><br>
+                <!-- End Figure Social Icons -->
+      </div>
+    </article>
+    <!-- End Article -->
+              </div>
+
+              <div class="col-md-6 g-mb-30">
+                <div class="blog-twitter-inner">
+                  <a class="twitter-timeline" data-height="650" href="https://twitter.com/PyLadiesGhana?ref_src=twsrc%5Etfw">Tweets by PyLadiesGhana</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+              </div>
+            </div>
+            <!-- End Banners -->
+          </div>
+        </div>
+        </div>
+      </section>
+ 
+
+    <!-- Clients -->
+    <div class="container g-py-70">
+      <div class="js-carousel" data-infinite="true" data-autoplay="true" data-slides-show="6" data-responsive='[{
+               "breakpoint": 768,
+               "settings": {
+                 "slidesToShow": 1
+               }
+             }]'>
+        <div class="js-slide u-block-hover">
+          <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="../../assets/img-temp/200x100/img1.png' %}" alt="Image Description">
+        </div>
+
+        <div class="js-slide u-block-hover">
+          <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="../../assets/img-temp/200x100/img2.png' %}" alt="Image Description">
+        </div>
+
+        <div class="js-slide u-block-hover">
+          <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="../../assets/img-temp/200x100/img3.png' %}" alt="Image Description">
+        </div>
+ 
+        <div class="js-slide u-block-hover">
+          <img class="mx-auto g-width-80 u-block-hover__main--grayscale g-opacity-0_3 g-opacity-1--hover g-cursor-pointer" src="../../assets/img-temp/200x100/img9.png' %}" alt="Image Description">
+        </div>
       </div>
     </div>
+    <!-- End Clients -->
+
+
 {% endblock content %}

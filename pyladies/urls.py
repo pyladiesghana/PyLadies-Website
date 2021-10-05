@@ -20,6 +20,8 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
 
+# Third-party app imports
+from machina import urls as machina_urls
 
 urlpatterns = [
     path('', include('home.urls', namespace='home')),
@@ -27,7 +29,7 @@ urlpatterns = [
     path('about/', include('about.urls', namespace='about')),
     path('sponsors/', include('sponsors.urls', namespace='sponsors')),
     path('partners/', include('partners.urls', namespace='partners')),
-    path('events/', include('events.urls', namespace='events')),
+    path('forum/', include(machina_urls)),
     path('admin/', admin.site.urls),
 ]
 

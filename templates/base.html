@@ -4,6 +4,10 @@
 <html lang="en">
   <head>
 
+  <!-- Title -->
+  <title>Home | PyLadies Ghana</title>
+
+  <!-- Required Meta Tags Always Come First -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -16,92 +20,156 @@
 	                                Programming, Django Girls, Mentor-ship"
     >
 
-    <!-- Title -->
-    <title>PyLadies | {% block title %}{% endblock title %}</title>
 
-      <!-- Favicon-->
-    <link rel="icon" href="{% static 'img/pyladies.png' %}"
-          type="image/gif" sizes="16x16">
-
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{% static 'img/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/apple-touch-icon.png' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon-32x32.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon-16x16.png' %}">
+  <link rel="manifest" href="{% static 'img/site.webmanifest">
+ 
+ 
     {% block stylesheets %}
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C500%2C600%2C700%7CPlayfair+Display%7CRoboto%7CRaleway%7CSpectral%7CRubik">
+  <!-- CSS Global Compulsory -->
+  <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.min.css' %}">
+  <!-- CSS Global Icons -->
+  <link rel="stylesheet" href="{% static 'vendor/icon-awesome/css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'vendor/icon-line/css/simple-line-icons.css' %}">
+  <link rel="stylesheet" href="{% static 'vendor/icon-etlinefont/style.css' %}">
+  <link rel="stylesheet" href="{% static 'vendor/icon-line-pro/style.css' %}">
+  <link rel="stylesheet" href="{% static 'vendor/icon-hs/style.css' %}">
+  <link rel="stylesheet" href="{% static 'vendor/dzsparallaxer/dzsparallaxer.css' %}">
+  <link rel="stylesheet" href="{% static 'vendor/dzsparallaxer/dzsscroller/scroller.css' %}">
+  <link rel="stylesheet" href="{% static 'vendor/dzsparallaxer/advancedscroller/plugin.css' %}">
+  <link rel="stylesheet" href="{% static 'vendor/fancybox/jquery.fancybox.min.css' %}">
+ 
+  <link rel="stylesheet" href="{% static 'vendor/slick-carousel/slick/slick.css' %}">
+
+  <link rel="stylesheet" href="{% static 'vendor/typedjs/typed.css' %}">
+  <link rel="stylesheet" href="{% static 'vendor/animate.css' %}">
+  <link rel="stylesheet" href="{% static 'vendor/hs-megamenu/src/hs.megamenu.css' %}">
+  <link rel="stylesheet" href="{% static 'vendor/hamburgers/hamburgers.min.css' %}">
+
+ 
+  <link rel="stylesheet" href="{% static 'vendor/icon-line-pro/style.css' %}">
+  <link rel="stylesheet" href="{% static 'vendor/icon-hs/style.css' %}">
+  <link rel="stylesheet" href="{% static 'vendor/animate.css' %}">  
+  <link rel="stylesheet" href="{% static 'vendor/fancybox/jquery.fancybox.css' %}"> 
+
+
+
+  <!-- CSS Unify -->
+  <link rel="stylesheet" href="{% static 'css/pyladies-core.css' %}">
+  <link rel="stylesheet" href="{% static 'css/pyladies-components.css' %}">
+  <link rel="stylesheet" href="{% static 'css/pyladies-globals.css' %}">
+
+  <!-- CSS Customization -->
+  <link rel="stylesheet" href="{% static 'css/custom.css' %}">
     <!-- Fonts -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' %}"
     />
 
     <!-- Stylesheets -->
     <link
       rel="stylesheet"
       type="text/css"
-      href="{% static 'css/bootstrap/bootstrap.min.css' %}"
+      href="{% static 'css/bootstrap/bootstrap.min.css' %}' %}"
     />
 
        <!-- Custom styles for this template -->
-    <link href="{% static 'css/pyladies/agency.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/pyladies/agency.min.css' %}' %}" rel="stylesheet" />
 
         <!-- PyLadies styles -->
-    <link rel="stylesheet" href="{% static 'css/pyladies/index.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/pyladies/index.css' %}' %}" />
     {% endblock stylesheets %}
-
-   <!-- Crisp Live Chat script -->
-     <script type="text/javascript">
-     window.$crisp=[];
-     window.CRISP_WEBSITE_ID="6b416409-1363-4dbd-9379-7b08cae6c91a";
-     (function(){ d=document;s=d.createElement("script");
-     s.src="https://client.crisp.chat/l.js"; s.async=1;
-     d.getElementsByTagName("head")[0].appendChild(s);})();
-     </script>
+ 
+    
 
   </head>
   <body>
 
     {% block navbar %}
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="{% url 'home:home' %}"><img
-                  class="img-responsive"
-                  src="{% static 'img/pyladies.png' %}"
-                  style="width:60px; height: 50px"
-                  alt=""
-                />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link about" href="{% url 'about:about' %}"
-                >About
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'events:event_list' %}">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.pythonghana.org/resources/" target="_blank">Resources</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'contact:contact' %}">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-          </ul>
-        </div>
+   
+    <!-- Header -->
+    <header id="js-header" class="u-header u-header--static">
+      <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10">
+        <nav class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal">
+          <div class="container">
+            <!-- Responsive Toggle Button -->
+            <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-minus-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+              <span class="hamburger hamburger--slider">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+              </span>
+              </span>
+            </button>
+            <!-- End Responsive Toggle Button -->
+
+            <!-- Logo -->
+            <a href="/" class="navbar-brand">
+              <img src="{% static 'img/logo.png' %}" alt="Image Description">
+            </a>
+            <!-- End Logo -->
+
+            <!-- Navigation -->
+            <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg g-mr-40--lg" id="navBar">
+              <ul class="navbar-nav text-uppercase g-pos-rel g-font-weight-600 ml-auto">
+              
+
+          <!-- Home -->
+          <li class="nav-item  g-mx-10--lg g-mx-15--xl">
+            <a href="/" class="nav-link g-py-7 g-px-0">Home</a>
+          </li>
+          <!-- End Home -->
+
+          
+          <li class="nav-item  g-mx-10--lg g-mx-15--xl">
+            <a href="#about" class="nav-link g-py-7 g-px-0">About</a>
+          </li>
+
+
+          <!-- Blog -->
+          <li class="nav-item  g-mx-10--lg g-mx-15--xl">
+            <a href="https://www.pythonghana.org/blog/category/pyladies/posts" target="/" class="nav-link g-py-7 g-px-0">Blog</a>
+          </li>
+          <!-- End Blog -->
+
+
+          <li class="nav-item  g-mx-10--lg g-mx-15--xl">
+            <a href="https://www.pythonghana.org/events" target="/" class="nav-link g-py-7 g-px-0">Events</a>
+          </li>
+
+          <li class="nav-item  g-mx-10--lg g-mx-15--xl">
+            <a href="https://www.pythonghana.org/coc" target="/" class="nav-link g-py-7 g-px-0">COC</a>
+          </li>
+
+          <li class="nav-item  g-mx-10--lg g-mx-15--xl">
+            <a href="https://www.pythonghana.org/resources" target="/" class="nav-link g-py-7 g-px-0">Resources</a>
+          </li>
+
+          <li class="nav-item  g-mx-10--lg g-mx-15--xl">
+            <a href="https://www.pythonghana.org/gallery" target="/" class="nav-link g-py-7 g-px-0">Gallery</a>
+          </li>
+
+
+ 
+              </ul>
+            </div>
+            <!-- End Navigation -->
+
+            <div class="d-inline-block g-hidden-md-down g-pos-rel g-valign-middle g-pl-30 g-pl-0--lg">
+              <a class="btn u-btn-outline-primary g-font-size-13 text-uppercase g-py-10 g-px-15" href="https://wrapbootstrap.com/theme/unify-responsive-website-template-WB0412697?ref=htmlstream" target="_blank">Support Us</a>
+            </div>
+          </div>
+        </nav>
       </div>
-    </nav>
+    </header>
+    <!-- End Header -->
     {% endblock navbar %}
 
 
@@ -111,150 +179,308 @@
 
     {% block footer %}
     <!-- Footer -->
-    <footer class="webintern-footer">
-      <div class="webintern-footer-inner">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-md-3 ">
-              <a class="webintern-footer-logo" href="{% url 'home:home' %}">
-                <img
-                  class="img-responsive"
-                  src="{% static 'img/pyladies.png' %}"
-                  style="width:100px;"
-                  alt=""
-                />
-              </a>
-              <!-- webintern_footer_title -->
-              <h4 class="webintern_footer_title h5">
-                <small> PyLadies Ghana </small>
-              </h4>
-              <div class="simple-text dark padding-sm">
-                <p>
-                  PyLadies Ghana is Mentor-ship group in
-                    Ghana focused on helping more women become
-                    active participants and leaders in the
-                    Python open-source Community.
-                </p>
-              </div>
-              <div class="empty-space xs-25 sm-25"></div>
-            </div>
-            <div class="col-sm-6 col-md-2 footer-2">
-              <!-- webintern_footer_title -->
-              <h4 class="webintern_footer_title h5">
-                <small>Quick Links</small>
-              </h4>
-              <ul class="webintern-footer-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-              </ul>
-              <div class="empty-space xs-25 sm-25"></div>
-            </div>
-            <div class="col-sm-6 col-md-3 footer-3">
-              <!-- webintern_footer_title -->
-              <h4 class="webintern_footer_title h5">
-                <small> Get Involved </small>
-              </h4>
-              <ul class="webintern-footer-list">
-                <li><a href="{% url 'sponsors:sponsor_list' %}">Sponsors</a></li>
-                <li><a href="{% url 'partners:partner_list' %}">Partners</a></li>
-                <li><a href="#">JAVA</a></li>
-              </ul>
-              <div class="empty-space xs-25"></div>
-            </div>
-            <div class="col-xs-12 col-md-4 col-sm-6">
-              <div class="marg-sm-b30"></div>
-              <!-- webintern_footer_title -->
-              <h4 class="webintern_footer_title h5">
-                <small>Join Our Mailing List</small>
-              </h4>
-              <div class="empty-space marg-lg-b20"></div>
+  
 
-              <div class="simple-text last dark ">
-                <p>Get latest updates</p>
-              </div>
-
-              <div class="empty-space marg-lg-b15"></div>
-              <!-- TT-SUBSCRIBE -->
-              <form method="post">
-                <div class="tt-subscribe">
-                  <input
-                    type="text"
-                    required=""
-                    placeholder="Enter your email"
-                  />
-                  <div class="tt-subscribe-submit">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <input type="submit" value="" />
-                  </div>
-                </div>
-              </form>
-              <div class="empty-space marg-lg-b30"></div>
-              <!-- TT-SOCAIL -->
-              <br />
-              <h4 class="webintern_footer_title h5">
-                <small> Follow US </small>
-              </h4>
-              <ul class="tt-socail">
-                <!-- <li>
-                  <a href="#"
-                    ><i class="fa fa-facebook" aria-hidden="true"></i
-                  ></a>
-                </li> -->
-                <li>
-                  <a href="https://www.instagram.com/pyladiesghana/" target="_blank">
-                      <i class="fa fa-instagram" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/pyladiesghana?lang=en" target="_blank">
-                      <i class="fa fa-twitter" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <!-- <li>
-                  <a href="#"
-                    ><i class="fa fa-google-plus" aria-hidden="true"></i
-                  ></a>
-                </li> -->
-              </ul>
+    <!-- Footer -->
+    <div id="contacts-section" class="g-bg-black-opacity-0_9 g-color-white-opacity-0_8 g-py-60">
+      <div class="container">
+        <div class="row">
+          <!-- Footer Content -->
+          <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+            <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
+              <h2 class="u-heading-v2__title h6 text-uppercase mb-0">About Us</h2>
             </div>
+
+            <p> A Mentor-ship group in Ghana focused on helping more women become active participants and leaders in Python and the open-source Community.</p>
           </div>
+          <!-- End Footer Content -->
+
+          <!-- Footer Content -->
+          <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+            <div class=" g-brd-white-opacity-0_9 g-mb-20"> 
+            </div> 
+          </div>
+          <!-- End Footer Content -->
+
+
+          <!-- Footer Content -->
+          <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+            <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
+              <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Useful Links</h2>
+            </div>
+
+            <nav class="text-uppercase1">
+              <ul class="list-unstyled g-mt-minus-10 mb-0">
+                <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+                  <h4 class="h6 g-pr-20 mb-0">
+                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#about">About Us</a>
+                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+              </h4>
+                </li>
+                <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+                  <h4 class="h6 g-pr-20 mb-0">
+                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://www.pythonghana.org/blog/category/pyladies/posts" target="/" >Blog</a>
+                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+              </h4>
+                </li>
+                <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+                  <h4 class="h6 g-pr-20 mb-0">
+                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://www.pythonghana.org/events" target="/">Events</a>
+                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+              </h4>
+                </li>
+                <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+                  <h4 class="h6 g-pr-20 mb-0">
+                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://www.pythonghana.org/coc" target="/" >COC</a>
+                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+              </h4>
+                </li>
+                <li class="g-pos-rel g-py-10">
+                  <h4 class="h6 g-pr-20 mb-0">
+                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://www.pythonghana.org/resources" target="/" >Resources</a>
+                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+              </h4>
+                </li>
+                <li class="g-pos-rel g-py-10">
+                  <h4 class="h6 g-pr-20 mb-0">
+                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://www.pythonghana.org/gallery" target="/" >Gallery</a>
+                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+              </h4>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- End Footer Content -->
+
+          <!-- Footer Content -->
+          <div class="col-lg-3 col-md-6">
+            <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
+              <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Our Contacts</h2>
+            </div>
+
+            <address class="g-bg-no-repeat g-font-size-12 mb-0" style="background-image: url({% static 'img/maps/map2.png' %});">
+          <!-- Location -->
+          <div class="d-flex g-mb-20">
+            <div class="g-mr-10">
+              <span class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1 g-color-white-opacity-0_6">
+                <i class="fa fa-map-marker"></i>
+              </span>
+            </div>
+            <p class="mb-0">Accra, <br> Ghana</p>
+          </div>
+          <!-- End Location -->
+
+          <!-- Phone -->
+          <div class="d-flex g-mb-20">
+            <div class="g-mr-10">
+              <span class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1 g-color-white-opacity-0_6">
+                <i class="fa fa-phone"></i>
+              </span>
+            </div>
+            <p class="mb-0">(+233) XXX XXX XXX <br> (+233) 54 699 8280</p>
+          </div>
+          <!-- End Phone -->
+
+          <!-- Email and Website -->
+          <div class="d-flex g-mb-20">
+            <div class="g-mr-10">
+              <span class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1 g-color-white-opacity-0_6">
+                <i class="fa fa-globe"></i>
+              </span>
+            </div>
+            <p class="mb-0">
+              <a class="g-color-white-opacity-0_8 g-color-white--hover" href="mailto:ghana@pyladies.com">ghana@pyladies.com</a>
+              <br>
+              <a class="g-color-white-opacity-0_8 g-color-white--hover" href="/">ghana.pyladies.com</a>
+            </p>
+          </div>
+          <!-- End Email and Website -->
+        </address>
+          </div>
+          <!-- End Footer Content -->
         </div>
       </div>
-      <div class="tt-copy">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="tt-copy-left text-center">
-                Copyright © PyLadies Ghana 2019. All rights reserved.
-              </div>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Copyright Footer -->
+    <footer class="g-bg-gray-dark-v1 g-color-white-opacity-0_8 g-py-20">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 text-center text-md-left g-mb-10 g-mb-0--md">
+            <div class="d-lg-flex">
+              <small class="d-block g-font-size-default g-mr-10 g-mb-10 g-mb-0--md">{% now "Y" %} &copy; <a href="https://www.pythonghana.org/">Python Software Community</a>. All Rights Reserved.</small>
             </div>
+          </div>
+
+          <div class="col-md-4 align-self-center">
+            <ul class="list-inline text-center text-md-right mb-0">
+              <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Twitter">
+                <a href="https://twitter.com/PyLadiesGhana" target="/" class="g-color-white-opacity-0_5 g-color-white--hover">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                <a href="https://linkedin.com/company/pythonghana" target="/" class="g-color-white-opacity-0_5 g-color-white--hover">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li> 
+              <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Instagram">
+                <a href="https://instagram.com/PyLadiesGhana" target="/" class="g-color-white-opacity-0_5 g-color-white--hover">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+              <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Facebook">
+                <a href="https://facebook.com/PyLadiesGhana" target="/" class="g-color-white-opacity-0_5 g-color-white--hover">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li> 
+            </ul>
           </div>
         </div>
       </div>
     </footer>
+    <!-- End Copyright Footer -->
+
+    <a class="js-go-to u-go-to-v1" href="#" data-type="fixed" data-position='{
+     "bottom": 15,
+     "right": 15
+   }' data-offset-top="400" data-compensation="#js-header" data-show-effect="zoomIn">
+      <i class="hs-icon hs-icon-arrow-top"></i>
+    </a>
     <!-- Footer -->
     {% endblock footer %}
 
-    {% block scripts %}
 
-    <!-- Scripts -->
 
-    <!-- Jquery -->
-    <script src="{% static 'js/jquery/jquery-3.3.1.slim.min.js' %}"></script>
-    <script src="{% static 'js/jquery/jquery.min.js' %}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
-    <!-- Bootstrap -->
-    <script src="{% static 'js/bootstrap/bootstrap.bundle.min.js' %}"></script>
 
-    <script src="{% static 'js/jquery/jquery.easing.min.js' %}"></script>
+    
+  </main>
 
-    <!-- PyLadies -->
-    <script src="{% static 'js/pyladies/sponsors.js' %}"></script>
+  <div class="u-outer-spaces-helper"></div>
 
-    {% endblock scripts %}
+
+  {% block scripts %}
+  <!-- Scripts -->
+  <!-- JS Global Compulsory -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/jquery-migrate/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'vendor/popper.js/popper.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/bootstrap.min.js' %}"></script>
+
+
+  <!-- JS Implementing Plugins -->
+  <script src="{% static 'vendor/appear.js' %}"></script>
+  <script src="{% static 'vendor/hs-megamenu/src/hs.megamenu.js' %}"></script>
+  <script src="{% static 'vendor/dzsparallaxer/dzsparallaxer.js' %}"></script>
+  <script src="{% static 'vendor/dzsparallaxer/dzsscroller/scroller.js' %}"></script>
+  <script src="{% static 'vendor/dzsparallaxer/advancedscroller/plugin.js' %}"></script>
+  <script src="{% static 'vendor/fancybox/jquery.fancybox.min.js' %}"></script>
+  <script src="{% static 'vendor/typedjs/typed.min.js' %}"></script>
+  <script src="{% static 'vendor/circles/circles.min.js' %}"></script>
+ 
+  <script src="{% static 'vendor/slick-carousel/slick/slick.js' %}"></script>
+  <script src="{% static 'vendor/fancybox/jquery.fancybox.min.js' %}"></script>
+
+  <!-- JS Unify -->
+  <script src="{% static 'js/hs.core.js' %}"></script>
+  <script src="{% static 'js/components/hs.header.js' %}"></script>
+  <script src="{% static 'js/helpers/hs.hamburgers.js' %}"></script>
+  <script src="{% static 'js/helpers/hs.height-calc.js' %}"></script>
+  <script src="{% static 'js/components/hs.tabs.js' %}"></script>
+  <script src="{% static 'js/components/hs.popup.js' %}"></script>
+  <script src="{% static 'js/components/text-animation/hs.text-slideshow.js' %}"></script>
+  <script src="{% static 'js/components/hs.rating.js' %}"></script>
+  <script src="{% static 'js/components/hs.onscroll-animation.js' %}"></script>
+  <script src="{% static 'js/components/hs.counter.js' %}"></script>
+ 
+  <script src="{% static 'js/components/hs.carousel.js' %}"></script>
+  <script src="{% static 'js/components/hs.progress-bar.js' %}"></script>
+
+  <script src="{% static 'js/components/hs.chart-pie.js' %}"></script>
+  <script src="{% static 'js/components/hs.go-to.js' %}"></script>
+
+  <!-- JS Customization -->
+  <script src="{% static 'js/custom.js' %}"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+        // initialization of tabs
+        $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+         // initialization of carousel
+         $.HSCore.components.HSCarousel.init('.js-carousel');
+
+        // initialization of header height offset
+        $.HSCore.helpers.HSHeightCalc.init();
+
+        // initialization of scroll animation
+        $.HSCore.components.HSOnScrollAnimation.init('[data-animation]');
+
+        // initialization of counters
+        var counters = $.HSCore.components.HSCounter.init('[class*="js-counter"]');
+
+        // initialization of chart pies with rtl option
+        var rtlItems = $.HSCore.components.HSChartPie.init('.js-pie-rtl', {
+          rtl: true
+        });
+
+        // initialization of rating
+        $.HSCore.components.HSRating.init($('.js-rating'), {
+          spacing: 4
+        });
+
+        // initialization of popups with media
+        $.HSCore.components.HSPopup.init('.js-fancybox-media', {
+          helpers: {
+            media: {},
+            overlay: {
+              css: {
+                'background': 'rgba(255, 255, 255, .8)'
+              }
+            }
+          }
+        });
+
+        // initialization of text animation (typing)
+        $(".u-text-animation.u-text-animation--typing").typed({
+          strings: [
+            "awesome template",
+            "perfect template",
+            "just like a boss"
+          ],
+          typeSpeed: 60,
+          loop: true,
+          backDelay: 1500
+        });
+
+        // initialization of go to
+        $.HSCore.components.HSGoTo.init('.js-go-to');
+      });
+
+      $(window).on('load', function () {
+        // initialization of header
+        $.HSCore.components.HSHeader.init($('#js-header'));
+        $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+        // initialization of HSMegaMenu component
+        $('.js-mega-menu').HSMegaMenu({
+          event: 'hover',
+          pageContainer: $('.container'),
+          breakpoint: 991
+        });
+      });
+
+      $(window).on('resize', function () {
+        setTimeout(function () {
+          $.HSCore.components.HSTabs.init('[role="tablist"]');
+        }, 200);
+      });
+  </script>
+
+{% endblock scripts %}
 
   </body>
 </html>

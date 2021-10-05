@@ -1,1 +1,0 @@
-from events.models.event_model import Event

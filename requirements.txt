@@ -1,4 +1,4 @@
-django==2.2
-django-machina==1.0.1
-django-photologue==3.9
+django 
+django-machina 
+django-photologue 
 
