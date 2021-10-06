@@ -18,3 +18,10 @@ def home(request):
                'sponsor_logos': sponsors_logo}
 
     return render(request, template_name, context)
+
+
+def members(request):
+	context = {}
+	template = "registration/members_register.html"
+	return render(request, template, context)
+ 

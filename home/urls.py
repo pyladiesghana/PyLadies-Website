@@ -2,7 +2,7 @@
 from django.urls import path
 
 # Home app imports
-from home.views.home_view import home
+from home.views.home_view import home, members 
 
 
 app_name = 'home'
@@ -14,4 +14,12 @@ urlpatterns = [
         view=home,
         name='home'
         ),
+    path(
+        route='membership/',
+        view=members,
+        name='members'
+        ), 
 ]
+
+
+   

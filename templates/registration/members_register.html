@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load i18n static %} 
+{% block meta_title %}{% if page %}{{ page.meta_title }}{% else %}{% trans "Become a Registered member" %} | Python Ghana 🇬🇭{% endif %}{% endblock %} 
+ 
+
+
+
+ 
+
+{% block content %}    
+ 
+    <section class="g-bg-cover g-bg-size-cover g-bg-white-gradient-opacity-v1--after" data-bg-img-src="{% static 'img/pyladies.jpg' %}">
+      <div class="container text-center g-pos-rel g-z-index-1 g-pb-50"> 
+        <div class="row d-flex justify-content-center align-content-end flex-wrap g-min-height-500">
+        <div class="col-lg-20 mt-auto">
+          <div class="mb-2"> 
+            {% if request.user.user_profile.verified_member %}
+            <h2 class="g-color-white g-font-weight-600  tp-caption NotGeneric-Title tp-resizeme">You are already Registered</h2>
+            {% else %}
+            <h2 class="g-color-white g-font-weight-600  tp-caption NotGeneric-Title tp-resizeme">Join Us</h2>
+            {% endif %}
+          
+          <p class="lead g-color-white-opacity-0_6"><br></p>
+          </div>
+          {% if request.user.user_profile.verified_member %}
+          <span class="g-color-white g-font-weight-400 g-font-size-20"> Hello {% if request.user.user_profile %} {{ request.user.user_profile.first_name }}{% else %}{% firstof user.get_short_name user.get_username %}{% endif %}, you've already been verified as a member</span>
+          {% else %}
+          <span class="g-color-white g-font-weight-600 g-font-size-20"> Hello PyLady! Become a member and join us on this journey 😊</span>
+          {% endif %}
+          
+        </div>
+        </div>
+      </div>
+      </section> 
+
+
+
+
+      <section class=" container-fluid g-px-30   g-bg-gray-light-v5 g-py-10" style="background-image: url({% static 'assets/img/patterns/1.png' %});" >
+        <div class="container"><br><br> 
+            
+        <div class="u-shadow-v19 g-bg-white g-pa-60 g-line-height-2 g-pa-40 g-mb-30">
+          <div class="media g-mb-15 justify-content-center "> 
+            <div class="media-body"> 
+              {% if request.user.user_profile.verified_member %}
+              
+              <div class="masonry-grid-item col-sm-6 justify-content-center text-center col-lg-4 g-mb-30 align-items-center">
+                <!-- Blog Grid Modern Blocks -->
+                <article class="u-shadow-v21 u-shadow-v21--hover g-transition-0_3 g-bg-yellow text-center g-rounded-5 g-pa-30 g-py-100">
+                  <span class="g-color-black-opacity-0_8 g-font-size-60 g-line-height-0">
+                      <i class="icon-info g-font-size-60"></i>
+              </span><br>
+              
+              <h2 class="h3 g-color-black g-font-weight-600 mb-4">Hi {% if request.user.user_profile %} {{ request.user.user_profile.first_name }}{% else %}{% firstof user.get_short_name user.get_username %}{% endif %},<br>you are already Registered</h2> 
+      
+                </article>
+                <!-- End Blog Grid Modern Blocks -->  
+              </div>  
+              {% else %}
+              <div class="overflow-h">
+                 
+                <div class="container" id="ff-compose"></div>
+                <div class="container" id="ff-compose"></div>
+                <script async defer src="https://formfacade.com/include/108217932737848155362/form/1FAIpQLSeXWnQplcydhh_5FEr4Wk1ZZTciZ8F3-9H5ygN93uXrHrxhCg/bootstrap.js?div=ff-compose"></script>  
+              </div> 
+              {% endif %}
+               
+            </div>
+          </div> 
+        </div> 
+
+     
+      </div>
+  </section>
+
+  
+{% endblock %} 
+ 
+
