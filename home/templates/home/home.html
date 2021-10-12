@@ -80,7 +80,7 @@
       <div class="container">
         <article class="row">
           <!-- Article Content -->
-          <div class="col-lg-8 g-mb-30">
+          <div class="col-md-6 g-mb-30">
             <header class="u-heading-v6-2 g-mb-20">
               <h6 class="g-font-size-12 text-uppercase g-font-weight-600 g-pl-90"></h6>
               <h3 class="u-heading-v6__title g-color-gray-dark-v2 g-brd-primary text-uppercase g-font-weight-600 g-mb-15">About Us</h3>
@@ -88,7 +88,7 @@
 
             <div class="g-pl-90--sm">
               <p class="lead g-mb-40 g-font-weight-400">
-                PyLadies Ghana is an initiative under the Python Software Community in Ghana (<a href="https://www.pythonghana.org/">Python Ghana</a>) focused on bridging the diversity gap in tech by empowering more ladies and introducing them to tech using the Python Programming language. 
+                PyLadies Ghana is an initiative under the Python Software Community in Ghana (<a href="https://www.pythonghana.org/" target="/">Python Ghana</a>) focused on bridging the diversity gap in tech by empowering more ladies and introducing them to tech using the Python Programming language. 
               </p>
               <p class="lead g-mb-40 g-font-weight-400">
                 We aim to promote, educate and advance a diverse community through outreach, education, conferences, events and social gatherings.
@@ -100,10 +100,21 @@
           </div>
           <!-- End Article Content -->
 
-          <!-- Article Image -->
-          <div class="col-lg-4 align-self-center">
-            <img class="img-fluid w-60 rounded" src="{% static 'img/pyladies.png' %}" alt="Iamge Description">
-          </div>
+          <!-- Article Image --> 
+            <div class="col-md-6 px-0">
+              <div class="js-carousel text-center u-carousel-v5 g-overflow-hidden h-100 g-max-height-50vh"
+                   data-infinite="true" data-autoplay="true" data-speed="7000" data-pause-hover="true" data-fade="true"
+                   data-open-speed="1000" data-close-speed="1000"
+                   data-arrows-classes="u-arrow-v1 g-absolute-centered--y g-width-40 g-height-40 g-font-size-20 g-color-white g-color-primary--hover g-bg-primary g-bg-white--hover g-transition-0_2 g-transition--ease-in"
+                   data-arrow-left-classes="fa fa-angle-left g-left-0"
+                   data-arrow-right-classes="fa fa-angle-right g-right-0"> 
+                <div class="js-slide g-bg-img-hero g-min-height-50vh" style="background-image: url({% static 'img/slider/1.png' %});"></div>
+                <div class="js-slide g-bg-img-hero g-min-height-50vh" style="background-image: url({% static 'img/slider/2.png' %});"></div>
+                <div class="js-slide g-bg-img-hero g-min-height-50vh" style="background-image: url({% static 'img/slider/3.png' %});"></div>
+                <div class="js-slide g-bg-img-hero g-min-height-50vh" style="background-image: url({% static 'img/slider/4.png' %});"></div>
+                <div class="js-slide g-bg-img-hero g-min-height-50vh" style="background-image: url({% static 'img/slider/5.png' %});"></div> 
+              </div>
+            </div>  
           <!-- End Article Image -->
         </article>
       </div>
@@ -619,7 +630,7 @@
     <!-- Figure -->
     <figure class="text-center">
       <!-- Figure Image -->
-      <img class="w-100 g-mb-20 g-width-200 g-height-200 " src="{% static 'img/team/user.jpg' %}" alt="Image Description">
+      <img class="w-100 g-mb-20 g-width-200 g-height-200 " src="{% static 'img/team/alice.jpg' %}" alt="Image Description">
       <!-- End Figure Image -->
 
       <!-- Figure Info -->
@@ -685,7 +696,7 @@
     <!-- Figure -->
     <figure class="text-center">
       <!-- Figure Image -->
-      <img class="w-100 g-mb-20 g-width-200 g-height-200 " src="{% static 'img/team/user.jpg' %}" alt="Image Description">
+      <img class="w-100 g-mb-20 g-width-200 g-height-200 " src="{% static 'img/team/theresah.jpg' %}" alt="Image Description">
       <!-- End Figure Image -->
 
       <!-- Figure Info -->
